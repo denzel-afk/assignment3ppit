@@ -1,18 +1,28 @@
 {
   "blogs": [
     {
-      "title": "halo",
-      "priority": "High",
-      "dueDate": "2005-03-21",
-      "description": "saya belum lahir di dunia",
-      "id": "d772"
+      "id": "a4f1",
+      "title": "yes",
+      "priority": "Low",
+      "dueDate": "2005-04-23",
+      "description": "uuuu",
+      "completed": false
     },
     {
-      "title": "stress",
+      "id": "a64e",
+      "title": "Denzel",
       "priority": "Low",
-      "dueDate": "2025-04-23",
-      "description": "yes I am in",
-      "id": "b4a9"
+      "dueDate": "2005-04-23",
+      "description": "belum lahir\n",
+      "completed": true
+    },
+    {
+      "id": "76a7",
+      "title": "really??",
+      "priority": "Medium",
+      "dueDate": "2005-09-19",
+      "description": "udah 4 hari",
+      "completed": false
     }
   ]
 }
