@@ -2,6 +2,8 @@ import { Link } from "react-router-dom"
 import { LuDot } from "react-icons/lu";
 
 const BlogList = ({ blogs }) => {
+  // Buat completion, bisa ditambah checkbox yang kalo diklik ngesend PUT
+  // request buat nge-update blognya
     return (
         <div>
             <div className="flex justify-between border-b-4 border-gray-300">

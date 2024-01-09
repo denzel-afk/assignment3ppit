@@ -8,11 +8,14 @@ import BlogDetails from './BlogDetails';
 import NotFound from './NotFound';
 import Update from './Update'
 
+// File name convention-nya: .jsx buat React component, .js buat yg bkn component
+// Button yang bukan buat submit form sebaiknya pake atribut type="button": https://arc.net/l/quote/jxzncice
 
 function App() {
   return (
     <Router>
       <div className="w-screen">
+        {/* Sebaiknya yg w-screen elemen paling atas aja, biar app-nya gk ada scroll2 ke samping horizontal */}
         <Title className="w-screen"/>
         <div className="flex">
           <Navbar classname="w-screen"/>

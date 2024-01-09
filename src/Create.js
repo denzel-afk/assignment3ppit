@@ -9,6 +9,7 @@ const Create = () => {
     const [description, setDescription] = useState('');
     const navigate = useNavigate();
 
+    // Cuman preference aja, async await syntax lebih mudah dibaca
     const handlesubmit = (e) =>{
         e.preventDefault();
         const blog={title, priority, dueDate, description};
@@ -27,6 +28,7 @@ const Create = () => {
         <div>
             <h2 className="text-2xl font-bold my-3 border-b-2">Create a New Todo</h2>
             <form onSubmit={handlesubmit}>
+                    {/* <label> biasanya dipasangin sama <input> lewat atribut forHtml di label & id di input */}
                     <label className="align-left block">Title: </label>
                     <input className="w-screen px-4 py-2 my-2 border border-gray-300 box-border block rounded-md hover:bg-gray-200 transition ease-in-out duration-300 text-gray-600" placeholder='Todo title' type="text" required value={title} onChange={(e)=>setTitle(e.target.value)}></input>
                     <label>Priority: </label>
