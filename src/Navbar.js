@@ -23,10 +23,12 @@ const Navbar = () => {
                 <div className="mt-4 flex flex-col gap-4 relative ">
                     <h2 className={`whitespace-pre duration-500 ${!open && 'opacity-0 translate-x-28 overflow-hidden'}`}>Navigate</h2>
                     {menus?.map((menu, i) => (
+                        // Not recommended pake index bagai key: https://arc.net/l/quote/jytixhoi
                         <Link to={menu?.link} key={i} className="flex items-center text-sm gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-md">
                             <div>
                                 {React.createElement(menu?.icon, { size: "20" })}
                             </div>
+                            {/* Transitionnya bagus 👍 */}
                             <h2 style={{transitionDelay:`${i+3}00ms`,}}  className={`whitespace-pre duration-500 ${!open && 'opacity-0 translate-x-28 overflow-hidden'}`}>
                                 {menu?.name}
                             </h2>

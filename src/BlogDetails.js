@@ -47,6 +47,7 @@ const BlogDetails = () => {
                         <h2>{blog.description}</h2>
                     </div>
                     <div className="my-5 flex justify-between">
+                        {/* Instead of navigate di onClick handler, bisa pake <Link> (nge-wrap <button> atau taro di dalemnya) */}
                         <button className="bg-black text-white font-semibold border-0 py-2 px-4 rounded-md cursor-pointer hover:bg-gray-700 transition: ease-in-out duration-300" onClick={(handleClickOK)}>OK</button>
                         <div className="flex">
                             <button className="mx-2 bg-white text-red-600 border-2 border-red-600 py-2 px-4 rounded-md hover:bg-red-600 transition ease-in-out duration-300 hover:text-white flex " onClick={handleClickDelete}>
